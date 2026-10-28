@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Demo 01 · Caldero mágico</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111}body{display:flex;justify-content:center;align-items:center;min-height:100vh;min-height:100dvh}
-#escena{position:relative;width:min(100vw,calc(100dvh * 1024 / 558));height:min(100dvh,calc(100vw * 558 / 1024));aspect-ratio:1024/558;overflow:hidden;background:#111;isolation:isolate}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent}body{display:flex;justify-content:center;align-items:center;min-height:100vh;min-height:100dvh}
+#escena{position:relative;width:min(100vw,calc(100dvh * 1024 / 558));height:min(100dvh,calc(100vw * 558 / 1024));aspect-ratio:1024/558;overflow:hidden;background:transparent;isolation:isolate}
 #fondo{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:0}
 #caldero{position:absolute;left:34.18%;top:16.13%;width:31.84%;height:75.09%;z-index:1;object-fit:fill;pointer-events:none}
 #capa-animacion{position:absolute;inset:0;width:100%;height:100%;background:transparent;pointer-events:none;z-index:2}
@@ -14,7 +14,6 @@
 </head>
 <body>
 <div id="escena" aria-label="Caldero con animación transparente de burbujas, humo y chispas">
-<img id="fondo" src="../cauldron-background.jpg" alt="">
 <img id="caldero" src="../cauldron-cutout.png" alt="">
 <canvas id="capa-animacion" width="1024" height="558"></canvas>
 </div>
