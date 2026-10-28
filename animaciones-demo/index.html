@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Laboratorio de animaciones</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#26334a,#10131b 60%,#090a0d);color:#f5f1e8;font:16px system-ui,-apple-system,Segoe UI,sans-serif;padding:clamp(20px,5vw,64px)}main{max-width:1000px;margin:auto}header{margin-bottom:32px}h1{font-size:clamp(30px,6vw,52px);margin:0 0 8px;letter-spacing:-.04em}header p{margin:0;color:#b8c0cc}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}.card{overflow:hidden;border:1px solid #ffffff24;border-radius:18px;background:#ffffff0c;box-shadow:0 16px 48px #0004}.preview{height:200px;display:grid;place-items:center;background:linear-gradient(135deg,#15171d,#28252e)}.preview img{width:100%;height:100%;object-fit:cover}.info{padding:20px}.tag{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#eacb86}.info h2{margin:7px 0;font-size:23px}.info p{margin:0 0 17px;line-height:1.5;color:#c2c6ce}.open{display:inline-block;text-decoration:none;color:#17130b;background:linear-gradient(135deg,#f5dc9c,#d4a94f);font-weight:800;padding:11px 16px;border-radius:999px}.foot{margin-top:28px;color:#939ba8;font-size:13px}
+</style>
+</head>
+<body><main>
+<header><h1>Laboratorio de animaciones</h1><p>Índice de pruebas interactivas. Cada demo tiene su propia página para corregirla sin afectar a las demás.</p></header>
+<section class="grid" aria-label="Animaciones disponibles">
+<article class="card"><div class="preview" style="background:radial-gradient(ellipse,#2a563d,#12151a)"><img src="cauldron-background.jpg" alt="Escena del caldero mágico"></div><div class="info"><span class="tag">Demo 01 · partículas en canvas</span><h2>Caldero mágico</h2><p>Burbujas, humo y chispas en capas sobre la escena.</p><a class="open" href="animaciones-demo/caldero.html">Abrir demo</a></div></article>
+<article class="card"><div class="preview"><img src="animaciones-demo/galera-referencia.jpg" alt="Galera verde de la suerte, imagen de referencia"></div><div class="info"><span class="tag">Demo 02 · personaje y física</span><h2>Galera animada</h2><p>Salto con squash & stretch, expresión, monedas que rebotan y destellos. La imagen queda guardada como referencia para futuras correcciones.</p><a class="open" href="animaciones-demo/galera.html">Abrir demo</a></div></article>
+</section><p class="foot">Las pruebas son independientes: una corrección en una demo no cambia las otras.</p>
+</main></body></html>
