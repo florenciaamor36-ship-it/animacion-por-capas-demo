@@ -22,5 +22,5 @@ const cp=Math.max(0,Math.min(1,(t-.52)/.55)),cs=cp<1?bounce(cp):1;image(crop.clo
 for(let i=coins.length-1;i>=0;i--){coins[i].update(dt);coins[i].draw();if(coins[i].alpha<=0)coins.splice(i,1)}
 const bp=Math.max(0,Math.min(1,(t-.66)/.48)),bs=bp<1?bounce(bp):1;image(crop.bonus,350,480,330,84,bs,Math.sin(now*.0014)*.012*(1-bp),bp);
 if(t>3&&coins.length===0){playing=false}if(playing||coins.length){raf=requestAnimationFrame(loop)}else{raf=0;ctx.clearRect(0,0,W,H);image(crop.med,350,250,360,360,1,0,1);image(crop.clovers[0],150,340,82,74);image(crop.clovers[2],550,340,82,74);image(crop.clovers[1],92,448,56,52);image(crop.clovers[3],608,447,56,52);image(crop.bonus,350,480,330,84)}}
-sprite.onload=()=>{start()};sprite.onerror=()=>{document.querySelector('.hint').textContent='No se pudo cargar la imagen del bonus.'};button.addEventListener('click',start);canvas.addEventListener('click',start)})();
+sprite.onload=()=>{start()};sprite.onerror=()=>{document.querySelector('.hint').textContent='No se pudo cargar la imagen del bonus.'};button.addEventListener('click',start);canvas.addEventListener('click',start);setTimeout(()=>{if(sprite.complete&&sprite.naturalWidth)start();else document.querySelector('.hint').textContent='Cargando arte del bonus…'},0)})();
 </script></body></html>
